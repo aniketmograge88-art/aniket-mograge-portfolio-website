@@ -1,0 +1,14 @@
+# Portfolio
+- [x] Apply supplied video destinations, replace Wedding with Vlog, add Promotional Video and Employer Branding, reduce headline size, and update total to 1700+.
+- [ ] Add the newly renamed thumbnails — awaiting the user's picture uploads.
+- [x] Restore name-only slides, center requested headings, update experience/enrollment and results, remove Vimeo, and activate supplied LinkedIn link.
+- [x] Replace screenshot-style gallery images with clean matching video snapshots.
+- [x] Update title, availability wording, and contact phone.
+- [x] Match eleven video entries with supplied screenshots and verified destinations.
+- [x] Apply latest creative reel, corporate, and real-estate screenshot labels; retain the original concert photo because the newly labeled concert image shows Rangotsav.
+- [x] Receive video URLs for Concert, Interior, Real Estate, and Automobile Corporate.
+- [x] Prevent late menu dependency optimization and verify fresh loads with no runtime errors.
+- [x] Build the exact single-page portfolio and animated gallery.
+- [x] Prepare and integrate the uploaded portrait cutout.
+- [x] Verify navigation, video destinations, gallery, and phone layout.
+- [x] LinkedIn URL supplied; Vimeo profile link removed at the user's request.
