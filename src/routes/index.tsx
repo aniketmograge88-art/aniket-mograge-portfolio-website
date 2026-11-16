@@ -54,7 +54,23 @@ function Index() {
     <section className="content-section work-section reveal" id="work"><SectionHeading label="Selected Work">Short-form, brand<br/>and promo video.</SectionHeading><PortfolioGallery/><div className="work-results"><p><strong>{VIDEO_VIEWS_MILLIONS}+ million</strong><span>Video views generated</span></p><p><strong>{VIDEOS_CREATED}+</strong><span>Videos created</span></p></div><div className="project-list">{projects.map((project, index) => <div className="project-row" key={project.name}><span className="row-number">{String(index + 1).padStart(2, '0')}</span><h3>{project.name}</h3><span className="project-category">{project.category}</span>{project.url ? <a href={project.url} target="_blank" rel="noreferrer" aria-label={`Watch ${project.name}`}>Watch ↗</a> : <span className="project-pending">Video link pending</span>}</div>)}</div></section>
     <section className="content-section reveal" id="worked-with"><SectionHeading label="Worked With">Brands and artists<br/>I've created for.</SectionHeading><div className="client-strip">{clients.map(client => <span key={client}>{client}</span>)}</div><div className="collaboration-list">{collaborations.map(([category, names], index) => <div className="detail-row" key={category}><span className="row-number">{String(index + 1).padStart(2, '0')}</span><h3>{category}</h3><p>{names}</p></div>)}</div></section>
     <section className="content-section services-section reveal" id="services"><SectionHeading label="Services">From first idea<br/>to published post.</SectionHeading><div>{services.map(([name, text], index) => <div className="detail-row service-row" key={name}><span className="row-number">{String(index + 1).padStart(2, '0')}</span><h3>{name}</h3><p>{text}</p></div>)}</div><div className="process-row">{process.map(([name, text], index) => <div key={name}><span className="eyebrow">{String(index + 1).padStart(2, '0')}</span><h3>{name}</h3><p>{text}</p></div>)}</div></section>
-    <section className="content-section about-section reveal" id="about"><SectionHeading label="About">Creative eye.<br/>Strategic mind.</SectionHeading><div className="about-copy"><p>I'm Aniket, a senior video editor and content strategist with {EXPERIENCE_YEARS} years of experience across agencies, studios and freelance clients. My background is in media graphics, animation and cinematography.</p><p>I'm currently enrolled in an M.Sc. in Strategic Marketing at Macromedia University Munich, combining craft with strategy.</p><p className="languages">Languages: English (fluent), German (A2, learning).</p></div></section>
+    
+<section className="content-section about-section reveal" id="about">
+  <SectionHeading label="About">Creative eye.<br/>Strategic mind.</SectionHeading>
+  <div className="about-copy">
+    <p>
+      I'm Aniket, a Senior Video Editor and Content Strategist with 4 years of experience working across agencies, studios and freelance projects. My background spans media graphics, content strategy, social media marketing, animation and cinematography, giving me a strong foundation in visual storytelling and post-production.
+    </p>
+    <p>
+      I'm currently pursuing an M.Sc. in Strategic Marketing at Macromedia University of Applied Sciences in Munich, combining creative execution with a deeper understanding of marketing and brand strategy.
+    </p>
+    <p>
+      I'm also experienced with AI-powered creative tools such as Claude, ChatGPT, NanoBanana, Higgsfield and ElevenLabs, using them for ideation, scripting, visual generation, voiceovers and sound design. I enjoy combining these tools with traditional post-production to develop creative concepts and bring them to life.
+    </p>
+    <p className="languages">Languages: English (fluent), German (A2, learning).</p>
+  </div>
+</section>
+
     <section className="content-section contact-section reveal" id="contact"><SectionHeading label="Contact">Let's make something.</SectionHeading><a className="contact-email" href="mailto:aniketmograge88@gmail.com">aniketmograge88@gmail.com <ArrowUpRight/></a><a className="contact-phone" href={CONTACT_PHONE_URL}>{CONTACT_PHONE} <ArrowUpRight size={24}/></a><div className="social-links"><Button variant="archiveLink" asChild><a href={LINKEDIN_URL} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={16}/></a></Button></div></section>
     <footer className="site-footer"><span>©2026 Aniket Mograge.</span><nav>{navigation.filter(([label]) => label !== 'Worked With').map(([label, id]) => <a key={id} href={`#${id}`}>{label}</a>)}</nav><span>Munich, Germany.</span></footer>
   </>;

@@ -15,11 +15,13 @@ import event from '@/assets/event-thumb.png';
 import promo from '@/assets/promo-thumb.webp';
 import employer from '@/assets/employer-thumb.webp';
 import shortFormNew from '@/assets/short-form-reel-new.png';
+import porscheAi from '@/assets/porsche-ai-thumb.png';
 
 export type Tone = 'red' | 'yellow' | 'blue' | 'cream' | 'dark';
 export type VideoProject = { name: string; category: string; videoUrl: string | null; thumbnail: string | null; tone: Tone };
 
 const projectList: VideoProject[] = [
+  { name: 'Porsche AI Commercial', category: 'AI / Automotive', videoUrl: 'https://youtu.be/03bCW3kc1p4', thumbnail: porscheAi, tone: 'dark' },
   { name: 'Concert', category: 'Live / Concert', videoUrl: 'https://www.youtube.com/watch?v=dYD1_Y6YKo0', thumbnail: concert, tone: 'red' },
   { name: 'Interior Design', category: 'Real Estate / Interior', videoUrl: 'https://www.youtube.com/watch?v=sY7csvnJLLI', thumbnail: interior, tone: 'blue' },
   { name: 'Real Estate', category: 'Brand / Real Estate', videoUrl: 'https://www.youtube.com/watch?v=LAd0eH2JXHE', thumbnail: realEstate, tone: 'yellow' },
